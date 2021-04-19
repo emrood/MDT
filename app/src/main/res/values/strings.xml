@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">app</string>
+    <string name="home">Acceuil</string>
+    <string name="title_2">Services</string>
+    <string name="services">Services</string>
+    <string name="messages">Messages</string>
+    <string name="header_title">MAirie de tabarre</string>
+    <string name="header_text">Description</string>
+</resources>
