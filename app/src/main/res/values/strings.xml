@@ -3,7 +3,11 @@
     <string name="home">Acceuil</string>
     <string name="title_2">Services</string>
     <string name="services">Services</string>
-    <string name="messages">Messages</string>
+    <string name="messages">Notifier</string>
     <string name="header_title">Mairie de tabarre</string>
-    <string name="header_text">Description</string>
+    <string name="header_text">info@mdt.com</string>
+    <string name="my_account">Mon compte</string>
+    <string name="settings">Parametres</string>
+    <string name="library">Bibliotheque</string>
+    <string name="configuration">Configuration</string>
 </resources>

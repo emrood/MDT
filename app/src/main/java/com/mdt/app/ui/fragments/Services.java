@@ -66,6 +66,26 @@ public class Services extends Fragment implements ServiceAdapter.OnServiceClickL
     @Override
     public void onResume() {
         super.onResume();
+        getServices();
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onServiceClick(View view, com.mdt.app.models.services service) {
+        Toast.makeText(getActivity(), service.getName() + " Clicked", Toast.LENGTH_SHORT).show();
+    }
+
+
+    public void getServices(){
         DataQueryBuilder queryBuilder = DataQueryBuilder.create();
         queryBuilder.setSortBy("name");
         services.findAsync(queryBuilder, new AsyncCallback<List<services>>() {
@@ -93,21 +113,5 @@ public class Services extends Fragment implements ServiceAdapter.OnServiceClickL
 
             }
         });
-
-    }
-
-    @Override
-    public void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onServiceClick(View view, com.mdt.app.models.services service) {
-        Toast.makeText(getActivity(), service.getName() + " Clicked", Toast.LENGTH_SHORT).show();
     }
 }
