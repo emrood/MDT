@@ -66,7 +66,9 @@ public class Services extends Fragment implements ServiceAdapter.OnServiceClickL
     @Override
     public void onResume() {
         super.onResume();
-        getServices();
+        if(serviceList.size() == 0){
+            getServices();
+        }
     }
 
     @Override
