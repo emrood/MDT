@@ -12,12 +12,15 @@ import android.os.Message;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
+import com.mdt.app.models.news;
+import com.mdt.app.models.new_medias;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 import com.mdt.app.R;
 import com.mdt.app.ui.fragments.Home;
 import com.mdt.app.ui.fragments.Messages;
+import com.mdt.app.ui.fragments.NewsDetail;
 import com.mdt.app.ui.fragments.Services;
 
 import butterknife.BindView;
@@ -73,6 +76,14 @@ public class Main extends AppCompatActivity {
     public void inflateFragment(Fragment fragment){
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
+    public void showNews(news mNews){
+        NewsDetail newsDetail = NewsDetail.newInstance(mNews);
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, newsDetail);
         transaction.addToBackStack(null);
         transaction.commit();
     }

@@ -18,6 +18,7 @@ import com.backendless.exceptions.BackendlessFault;
 import com.backendless.persistence.DataQueryBuilder;
 import com.mdt.app.App;
 import com.mdt.app.R;
+import com.mdt.app.ui.activities.Main;
 import com.mdt.app.ui.adapters.NewsAdapter;
 import com.mdt.app.models.news;
 import com.mdt.app.models.new_medias;
@@ -85,9 +86,8 @@ public class Home extends Fragment implements NewsAdapter.OnNewClickListener {
     @Override
     public void onNewClick(View view, news service) {
         try{
-            Toast.makeText(App.getContext(), service.getCreated().toString(), Toast.LENGTH_SHORT).show();
+            ((Main) getActivity()).showNews(service);
         }catch (Exception e){
-
         }
     }
 

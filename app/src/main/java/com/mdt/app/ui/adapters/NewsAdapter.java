@@ -54,7 +54,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewViewHolder>
     public void onBindViewHolder(NewViewHolder holder, final int position) {
 
 //        holder.itemView.setSelected(selectedPos == 0);
-        holder.tvNewsTitle.setText(newsList.get(0).getTitle());
+        holder.tvNewsTitle.setText(newsList.get(position).getTitle());
 
         try{
             if(newsList.get(position).getFk_news_media().size() > 0){

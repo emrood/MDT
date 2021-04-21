@@ -6,10 +6,11 @@ import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.persistence.*;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Date;
 
-public class news
+public class news implements Serializable
 {
   private String ownerId;
   private String content;

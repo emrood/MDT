@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingStart="@dimen/margin_16dp"
+    android:paddingEnd="@dimen/margin_16dp"
+    android:paddingTop="@dimen/margin_4dp"
+    android:paddingBottom="@dimen/margin_4dp"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/iv_news_baner"
+                    android:src="@drawable/mdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/iv_media"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/newspaper"
+                    android:layout_width="30dp"
+                    android:layout_margin="@dimen/margin_4dp"
+                    android:layout_height="30dp"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_news_title"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:maxLines="4"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                tools:text="TEST TITLE"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tv_news_date"
+                android:layout_width="match_parent"
+                tools:text="@string/app_name"
+                android:gravity="end"
+                android:textColor="@color/divider"
+                android:layout_marginBottom="@dimen/margin_4dp"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:id="@+id/tv_news_content"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                tools:text="@string/test"
+                android:layout_height="wrap_content"/>
+
+
+            <VideoView
+                android:id="@+id/vv_news"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_height="200dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
