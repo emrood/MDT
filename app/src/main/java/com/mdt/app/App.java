@@ -18,9 +18,8 @@ public class App extends Application {
         context = this;
         app = this;
         PreferencesHelper.initHelper(this);
-        Backendless.initApp(this, "41E22A64-D1A4-EDA7-FF47-681725D28B00", "9AE22388-90EC-4B97-B4E3-6E72F92778F1");
+        Backendless.initApp(this, "784C9380-873E-42F2-8C30-9243CFD9DF3B", "93C223C5-E022-4D0D-81F7-3AC9A9B0F389");
     }
-
     public static Context getContext() {
         return context;
     }
