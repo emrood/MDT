@@ -6,5 +6,5 @@ public class Constants {
     public static final String MEDIA_TYPE_VIDEO = "video";
     public static final String MEDIA_TYPE_IMAGE = "image";
     public static final String MEDIA_TYPE_DOCUMENT = "doc";
-    public static final String BASE_FILE_PATH = "https://backendlessappcontent.com/41E22A64-D1A4-EDA7-FF47-681725D28B00/8EFF5A8D-F42D-4DD5-BE04-206C6B00014C/files/";
+    public static final String BASE_FILE_PATH = "https://backendlessappcontent.com/784C9380-873E-42F2-8C30-9243CFD9DF3B/F8822631-9668-4724-9B11-2205787209F9/files/";
 }

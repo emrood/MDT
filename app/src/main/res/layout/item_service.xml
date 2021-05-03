@@ -31,7 +31,8 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/mdt"/>
+                android:src="@drawable/mdt"
+                app:tint="@color/primary" />
 
             <TextView
                 android:id="@+id/tv_service_name"
